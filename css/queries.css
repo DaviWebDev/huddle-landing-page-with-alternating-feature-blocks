@@ -1,0 +1,132 @@
+/*Redimensionamento para telas maiores do que 680px*/
+@media screen and (min-width: 448px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "logo ."
+            "contacts contacts"
+            "list ."
+            "social social"
+            "copyright copyright";
+        padding: 7rem 3rem;
+    }
+
+    .footer__logo {
+        grid-area: logo;
+    }
+
+    .footer__contacts {
+        grid-area: contacts;
+    }
+
+    .location {
+        max-width: 70%;
+    }
+
+    .footer__options {
+        grid-area: list;
+    }
+
+    .footer__social {
+        grid-area: social;
+    }
+
+    .footer__copy {
+        grid-area: copyright;
+    }
+}
+
+/*Redimensionamento para telas maiores que 749px*/
+@media screen and (min-width: 749px) {
+    .features--reverse {
+        grid-template-areas: "text image";
+    }
+
+    .features--reverse .feature__image {
+        grid-area: image;
+    }
+
+    .features--reverse .feature__text {
+        grid-area: text;
+    }
+}
+
+/*Redimensionamento para telas maiores que 1024px*/
+@media screen and (min-width: 1024px) {
+    .header {
+        background-image: url(/images/bg-hero-desktop.svg);
+        padding: 1.5rem 5rem 2rem 5rem;
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "logo . ."
+            "contacts list social"
+            ". . copyright";
+    }
+
+    .header__menu {
+        padding: 0;
+    }
+
+    .header__intro {
+        padding: 0;
+    }
+
+    .header__content {
+        text-align: start;
+    }
+
+    .header__actions button {
+        height: 45px;
+        border-radius: 1.5rem;
+    }
+
+    .header__image img {
+        width: clamp(200px, 100%, 600px);
+    }
+
+    .header__title {
+        max-width: 80%;
+    }
+
+    .header__description {
+        max-width: 90%;
+    }
+
+    .header__button {
+        align-self: flex-start;
+    }
+
+    .features {
+        text-align: start;
+    }
+
+    .btn--design {
+        width: clamp(200px, 100%, 250px);
+        height: 60px;
+    }
+
+    .location {
+        max-width: 80%;
+    }
+
+    .footer__list {
+        width: fit-content;
+    }
+
+    .footer__options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1580px) {
+    .header__title {
+        max-width: 70%;
+    }
+
+    .header__description {
+        max-width: 75%;
+    }
+}
