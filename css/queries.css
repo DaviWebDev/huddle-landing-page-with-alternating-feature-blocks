@@ -54,7 +54,7 @@
 /*Redimensionamento para telas maiores que 1024px*/
 @media screen and (min-width: 1024px) {
     .header {
-        background-image: url(/images/bg-hero-desktop.svg);
+        background-image: url(../images/bg-hero-desktop.svg);
         background-size: cover;
         padding: 1.5rem 5rem 2rem 5rem;
     }
